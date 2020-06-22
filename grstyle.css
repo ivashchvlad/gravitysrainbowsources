@@ -1,8 +1,43 @@
 * {
     box-sizing: border-box;
 }
+
+body.lock {
+    overflow: hidden;
+}
+
+nav {
+    display: none;
+    overflow: scroll;
+    width: 100%;
+    height: 100%;
+}
+
 main {
-    padding: 0 20px 0 20px;
+    padding: 0 5% 0 5%;
+}
+
+h1 {
+    text-transform: capitalize;
+    font-family: 'Playfair Display';
+    font-weight: 700;
+}
+
+.about {
+    margin: 10px 0 10px 0;
+}
+
+.about * {
+    margin: 0;
+}
+
+.about h4, .about h5{
+    font-family: 'Oswald', sans-serif;
+    color: rgb(184, 184, 184);
+}
+
+.about a {
+    color: black;
 }
 
 h3 {
@@ -14,6 +49,11 @@ h3 {
 h4 {
     text-transform: uppercase;
     margin: 10px 0 10px 0;
+    font-size: 15pt;
+}
+
+h5 {
+    font-size: 13pt;
 }
 
 ul {
@@ -51,6 +91,25 @@ header {
     main{
         padding-top: 50px;
     }
+    nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: #ffffff;
+        padding-top: 50px;
+        display: none;
+    }
+    li {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+    li a {
+        flex: 30% 0;
+        font-size: 20pt;
+        margin-bottom: 5px;
+    }
     header {
         height: 50px;
         width: 100%;
@@ -79,6 +138,7 @@ header {
         height: 2px;
         left: 0;
         z-index: 10;
+        transition: all 0.4s ease-out 0s;
     }
     .header__burger:before {
         top:0;
@@ -87,6 +147,7 @@ header {
         bottom: 0;
     }
     .header__burger span{
+        transition: all 0.4s ease-out 0s;
         background-color: black;
         position: absolute;
         top:9px;
@@ -94,5 +155,16 @@ header {
         height: 2px;
         left: 0;
         z-index: 10;
+    }
+    .header__burger.active:before {
+        transform: rotate(45deg);
+        top: 9px;
+    }
+    .header__burger.active:after {
+        transform: rotate(-45deg);
+        bottom: 9px;
+    }
+    .header__burger.active span {
+        transform: scale(0);
     }
 }
