@@ -1,6 +1,7 @@
 const path = require("path")
 const HtmlWebpackPlugin = require("html-webpack-plugin")
 const { allowedNodeEnvironmentFlags } = require("process")
+const MiniCssExtractPlugin = require("mini-css-extract-plugin")
 
 module.exports = {
     entry: './src/index.tsx',
@@ -41,25 +42,44 @@ module.exports = {
                 loader: "source-map-loader"
             },
             {
-                test: /\.s[ac]ss$/i,
+                test: /\.scss$/,
                 use: [
-                    // Creates `style` nodes from JS strings
                     'style-loader',
-                    // Translates CSS into CommonJS
-                    'css-loader',
-                    // Compiles Sass to CSS
-                    'sass-loader',
-                ],
+                    MiniCssExtractPlugin.loader,
+                    {
+                        loader: 'css-loader',
+                        options: { sourceMap: true }
+                    }, {
+                        loader: 'postcss-loader',
+                        options: { sourceMap: true }
+                    }, {
+                        loader: 'sass-loader',
+                        options: { sourceMap: true }
+                    }
+                ]
             },
             {
                 test: /\.css$/,
-                use: ["style-loader", "css-loader"]
+                use: [
+                    'style-loader',
+                    MiniCssExtractPlugin.loader,
+                    {
+                        loader: 'css-loader',
+                        options: { sourceMap: true }
+                    }, {
+                        loader: 'postcss-loader',
+                        options: { sourceMap: true}
+                    }
+                ]
             }
         ]
     },
     plugins: [
         new HtmlWebpackPlugin({
             template: "./src/index.html"
+        }),
+        new MiniCssExtractPlugin({
+            filename: "[name].css"
         })
     ],
 }

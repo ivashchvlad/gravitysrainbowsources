@@ -11,7 +11,7 @@ function GR() {
                 <div className="about">
                     <h3>Michael Davitt Bell</h3>
                     <h4>Williams College</h4>
-                    <h5>for information on the author, visit his  
+                    <h5>for information on the author, visit his
                         <a href="https://www.williams.edu/Individuals/mbell/INDEX.HTM" target="blank">home page</a>
                     </h5>
                 </div>
@@ -57,7 +57,7 @@ function GR() {
                         rooftop banana garden, sees the vapor trail of a rocket launch across the
                         Channel ("incoming
                         mail," he thinks), and proceeds to pick bananas.
-            </p>
+                    </p>
                     <p id="1-2">
                         [2] 7-16. The banana breakfast at Pirate's ("a spell, against falling
                         objects"). A phone call
@@ -66,21 +66,21 @@ function GR() {
                         "strange talent . . . for getting inside the fantasies of others." His proxy
                         dealings with the Giant
                         Adenoid.
-            </p>
+                    </p>
                     <p id="1-3">
-                        <span className="bold">[3] 17-19.</span> Teddy Bloat to ACHTUNG office of Tantivy Mucker-Maffick and
-                (American) Lt.
-                Tyrone Slothrop. He photographs a map above Slothrop's desk, a map of London
-                to which stars
-                of various colors have been affixed.
-            </p>
+                        [3] 17-19. Teddy Bloat to ACHTUNG office of Tantivy Mucker-Maffick and
+                        (American) Lt.
+                        Tyrone Slothrop. He photographs a map above Slothrop's desk, a map of London
+                        to which stars
+                        of various colors have been affixed.
+                    </p>
                     <p id="1-4">
                         [4] 20-29. Slothrop, trying to gain access to bomb-impact site,
                         sees Pirate retrieve his message.
                         We learn more about the map, about "operational paranoia," and a bit about
                         Slothrop's New
                         England family: "they did not prosper."
-            </p>
+                    </p>
                     <p id="1-5">
                         [5] 29-37. A s&eacute;ance: "Roland Feldspath (the spirit), Peter Sachsa
                         (the control), Carroll Eventyr
@@ -95,7 +95,7 @@ function GR() {
                         Scorpia Mossmoon (whose husband, Clive, was in plastics). He both envies,
                         and wishes to
                         protect, Roger and Jessica.
-            </p>
+                    </p>
                     <p id="1-6">
                         [6] 37-42. Roger and Jessica, in car, discuss Roger's Pavlovian colleague,
                         Ned Pointsman.
@@ -103,7 +103,7 @@ function GR() {
                         We learn about their
                         (illegal) meeting-place in the stay-away zone. "They are in love. Fuck
                         the war."
-            </p>
+                    </p>
                     <p id="1-7">
                         [7] 42-47. In bombed-out building, Roger and Pointsman (the latter's
                         foot wedged firmly in a
@@ -112,7 +112,7 @@ function GR() {
                         implanted tubes). Roger and Jessica return Pointsman to St. Veronica's Hospital
                         (of the True
                         Image ["vera ikon"]). We hear of Kevin Spectro and The Book (by Pavlov).
-            </p>
+                    </p>
                     <p id="1-8">
                         [8] 47-53. Spectro and Pointsman, at St. Veronica's, discuss the case
                         of Tyrone Slothrop (who--and this is important to them--was as an infant
@@ -120,7 +120,7 @@ function GR() {
                         envies Spectro; he lusts for human subjects. He does not want dogs any more,
                         not even the
                         octopus, Grigori, but "one, little, Fox!" (i.e., Slothrop.)
-            </p>
+                    </p>
                     <p id="1-9">
                         [9] 53-60. While Roger sleeps, Jessica gazes out the window
                         of the stay-away zone house. We
@@ -129,7 +129,7 @@ function GR() {
                         rocket impacts. The frequency of such impacts obeys (as Roger has predicted)
                         the Poisson
                         distribution. Some oppositions emerge: science vs. love, war vs. love.
-            </p>
+                    </p>
                     <p id="1-10">
                         [10] 60-71. Slothrop, without being told why, has been transferred from
                         ACHTUNG to St.
@@ -150,7 +150,7 @@ function GR() {
                         Crouchfield (or Crutchfield), and his decreasingly singular accessories
                         (including an Afro-Scandinavian "Pard"--cf., later, Blicero and Enzian?).
                         Back to the Kenosha Kid.
-            </p>
+                    </p>
                     <p id="1-11">
                         [11] 71-72. A pornographic fantasy-picture of Scorpia Mossmoon (How
                         did They know?)
@@ -159,7 +159,7 @@ function GR() {
                         rocket. The message: bring out operative (later identified for us as Katje
                         Borgesius [a
                         Dutchified contemporary Argentine writer in drag?]).
-            </p>
+                    </p>
                     <p id="1-12">
                         [12] 72-83.
                         The White Visitation: mental hospital converted to ostensibly
@@ -168,69 +168,69 @@ function GR() {
                         Katje, p. 106). Operation
                         Black Wing; its purpose: to exacerbate (by radio transmissions) German racial
                         fears of African
-                Hereros (hence research into <i>Slothrop's </i>racial fears). Create fiction
-                of "Schwarzkommando"
-                operating in Germany (Black Power Gonna Get Your Mutti?). Old Brigadier
-                Ernest
-                [Hemingway?] Pudding--World War I veteran, Pointsman's boss. His curious
-                "briefings" (cf.
-                Mrs. Quoad's candy "surprises" in <a href="#1-15">[15]</a> below)?
-            </p>
+                        Hereros (hence research into <i>Slothrop's </i>racial fears). Create fiction
+                        of "Schwarzkommando"
+                        operating in Germany (Black Power Gonna Get Your Mutti?). Old Brigadier
+                        Ernest
+                        [Hemingway?] Pudding--World War I veteran, Pointsman's boss. His curious
+                        "briefings" (cf.
+                        Mrs. Quoad's candy "surprises" in <a href="#1-15">[15]</a> below)?
+                    </p>
                     <p id="1-13">
                         [13] 83-92. What is known about Laszlo Jamf's experiments (during his
                         year at Harvard) on
                         "Infant Tyrone." Response: erection. Stimulus? And was his reflex
-                deconditioned, perhaps, <i>beyond zero</i>? The mystery of Slothrop's map,
-                which has stars (and
-                dates) to record where he has
-                "scored" in London. It is <i>identical</i> with Roger Mexico's map of
-                rocket impacts. Moreover,
-                Slothrop's "scores" always <i>precede</i> (by two to ten days) the arrival
-                of the rocket at the same
-                location. Jessica: "What about the girls?" Pointsman (Pavlov, cause and
-                effect) vs. Mexico
-                (Janet, statistician, "anarchist"). Pointsman-Pavlov-Mefistofeles, nevertheless,
-                to Mexico-Janet-Faust: "We both have Slothrop."
-            </p>
+                        deconditioned, perhaps, <i>beyond zero</i>? The mystery of Slothrop's map,
+                        which has stars (and
+                        dates) to record where he has
+                        "scored" in London. It is <i>identical</i> with Roger Mexico's map of
+                        rocket impacts. Moreover,
+                        Slothrop's "scores" always <i>precede</i> (by two to ten days) the arrival
+                        of the rocket at the same
+                        location. Jessica: "What about the girls?" Pointsman (Pavlov, cause and
+                        effect) vs. Mexico
+                        (Janet, statistician, "anarchist"). Pointsman-Pavlov-Mefistofeles, nevertheless,
+                        to Mexico-Janet-Faust: "We both have Slothrop."
+                    </p>
                     <p id="1-14">
                         [14] 92-113. Katje Borgesius (the operative brought out by Pirate),
                         alone with Osbie Feel and
                         observing camera at Pirate's. He's cooking dope. Seeing him open the oven
                         she recalls her
                         assignment in Holland: with Captain Blicero (formerly, e.g., in Pynchon's
-                <i>V.</i>, Lt. Weissman) and
-                Gottfried, at rocket-launching area. Their Hansel and Gretel game (cf. <a href="#1-21">[21]</a>
-                below). Blicero's
-                death-wish (the Oven)--<i>his </i>(switch in point of view) memories of
-                S&uuml;dwest Africa, the Herero
-                boy he named "Enzian." Another switch (102) to Gottfried's point of view:
-                he watches Katje's
-                escape. Back to Katje (104): "The true war is a celebration of markets."
-                Back to "present"
-                (106), via reprise of Reg le Froyd (cf. 73), then Pirate's point of view.
-                Story of Frans van der
-                Groov (Katje's ancestor) and the killing of Dodoes in Mauritius in the 17th
-                century. Pirate and
-                Osbie alone (Katje has gone to the White Visitation, her version of "Bert"?).
-                Schwarzkommando
-                propaganda film, made by famous German director, Gerhardt von G&ouml;ll.
-                After showings,
-                projector is taken downstairs (at "White Visitation") so that octopus, Grigori,
-                can be shown film
-                of Katje at Pirate's --whose filming opened this section (cf. first and last
-                sentences, pp. 92 and
-                113).
-            </p>
+                        <i>V.</i>, Lt. Weissman) and
+                        Gottfried, at rocket-launching area. Their Hansel and Gretel game (cf. <a href="#1-21">[21]</a>
+                        below). Blicero's
+                        death-wish (the Oven)--<i>his </i>(switch in point of view) memories of
+                        S&uuml;dwest Africa, the Herero
+                        boy he named "Enzian." Another switch (102) to Gottfried's point of view:
+                        he watches Katje's
+                        escape. Back to Katje (104): "The true war is a celebration of markets."
+                        Back to "present"
+                        (106), via reprise of Reg le Froyd (cf. 73), then Pirate's point of view.
+                        Story of Frans van der
+                        Groov (Katje's ancestor) and the killing of Dodoes in Mauritius in the 17th
+                        century. Pirate and
+                        Osbie alone (Katje has gone to the White Visitation, her version of "Bert"?).
+                        Schwarzkommando
+                        propaganda film, made by famous German director, Gerhardt von G&ouml;ll.
+                        After showings,
+                        projector is taken downstairs (at "White Visitation") so that octopus, Grigori,
+                        can be shown film
+                        of Katje at Pirate's --whose filming opened this section (cf. first and last
+                        sentences, pp. 92 and
+                        113).
+                    </p>
                     <p id="1-15">[15] 114-120. Slothrop, again not knowing why, has been returned from
-                    "White Visitation" to
-                    ACHTUNG and London. Disappointed, he also feels that he's being followed
-                    (he is, by
-                    Pointsman's operatives). He visits Darlene and Mrs. Quoad: "the Disgusting
-                    English Candy
-                    Drill" (cf. Pudding's "briefings," above). Sex is followed (and revived)
-                    by explosion of rocket:
-                    "the rocket's rush comes swelling."
-            </p>
+                        "White Visitation" to
+                        ACHTUNG and London. Disappointed, he also feels that he's being followed
+                        (he is, by
+                        Pointsman's operatives). He visits Darlene and Mrs. Quoad: "the Disgusting
+                        English Candy
+                        Drill" (cf. Pudding's "briefings," above). Sex is followed (and revived)
+                        by explosion of rocket:
+                        "the rocket's rush comes swelling."
+                    </p>
                     <p id="1-16">
                         [16] 120-136. Roger and Jessica. His jealousy of her fianc&eacute;,
                         Jeremy (Beaver). The day she
@@ -243,7 +243,7 @@ function GR() {
                         about who we are," on "the path you must create by yourself, alone in the
                         dark . . . the way
                         home."
-            </p>
+                    </p>
                     <p id="1-17">
                         [17] 136-144. Pointsman (as "you"--i.e., as if we needed it now, a
                         second-person singular
@@ -260,36 +260,36 @@ function GR() {
                         minotaur. Slothrop--who, Pointsman reflects, should be on the Riviera by
                         now--is his new
                         "Minotaur" (the subject, or "Fox," who may at last earn him the Prize).
-            </p>
+                    </p>
                     <p id="1-18">
                         [18] 145-154. Flashback (her point of view) to Nora Dodson-Truck's discovery
                         that Carroll
-                Eventyr is a medium (cf. <a href="#1-5">[5]</a> above; but also NB.: "Lewis <i>Carroll</i>"
-                was the pen name of the
-                mathematician and undressed-child photographer, Charles L. <i>Dodgson</i>.
-                Is this information help,
-                or only further harm? Do you think the lost "g" is important?) Eventyr's
-                control on the Other
-                Side is (remember?) Peter Sachsa. We learn about other "White Visitation"
-                freaks, including
-                Gavin Trefoil who, by metabolizing tyrosene and thereby producing melanin
-                (cf. "kryptosam," p.
-                71), can alter his skin color (cf. the Afro-Scandinavian of Slothrop's
-                "Crouchfield" fantasy? or
-                Enzian?). There is a brief conversation (apparently) between veteran and
-                neophyte skin
-                pigments. We learn of Nora's assertion of the "Zero." Of the "Angel" seen
-                over Germany by
-                Basher St. Blaise. Peter Sachsa (the control), recalls (or at least the
-                transcripts of Eventyr's
-                sessions, which Eventyr cannot remember, report that he recalls) his life
-                before death--including
-                "Lt. Weissmann" (Blicero) and his "Herero aide" (his lover, his "Pard":
-                Enzian). Peter's love for
-                Leni P&ouml;kler, wife of chemical engineer. (All this transpired before
-                1930, when Peter was killed
-                by a blow to the head from a policeman during a political demonstration.)
-            </p>
+                        Eventyr is a medium (cf. <a href="#1-5">[5]</a> above; but also NB.: "Lewis <i>Carroll</i>"
+                        was the pen name of the
+                        mathematician and undressed-child photographer, Charles L. <i>Dodgson</i>.
+                        Is this information help,
+                        or only further harm? Do you think the lost "g" is important?) Eventyr's
+                        control on the Other
+                        Side is (remember?) Peter Sachsa. We learn about other "White Visitation"
+                        freaks, including
+                        Gavin Trefoil who, by metabolizing tyrosene and thereby producing melanin
+                        (cf. "kryptosam," p.
+                        71), can alter his skin color (cf. the Afro-Scandinavian of Slothrop's
+                        "Crouchfield" fantasy? or
+                        Enzian?). There is a brief conversation (apparently) between veteran and
+                        neophyte skin
+                        pigments. We learn of Nora's assertion of the "Zero." Of the "Angel" seen
+                        over Germany by
+                        Basher St. Blaise. Peter Sachsa (the control), recalls (or at least the
+                        transcripts of Eventyr's
+                        sessions, which Eventyr cannot remember, report that he recalls) his life
+                        before death--including
+                        "Lt. Weissmann" (Blicero) and his "Herero aide" (his lover, his "Pard":
+                        Enzian). Peter's love for
+                        Leni P&ouml;kler, wife of chemical engineer. (All this transpired before
+                        1930, when Peter was killed
+                        by a blow to the head from a policeman during a political demonstration.)
+                    </p>
                     <p id="1-19">
                         [19] 154-167. Leni's difficult (and possibly anachronistic) growth into
                         feminism. Her fantasy of
@@ -299,40 +299,40 @@ function GR() {
                         incidentally, of
                         Laszlo Jamf--meets Kurt Mondaugen (a school chum and a character in the
                         S&uuml;dwest Africa
-                episode in Pynchon's <i>V.</i>, also involving Weissmann [Blicero]) who
-                guides him to a job in rocket
-                development. Leni leaves Franz (taking their daughter, Ilse) for Peter Sachsa,
-                who--when she
-                arrives--is conducting a s&eacute;ance (he, too, being a medium) to contact
-                the spirit of Walter
-                Rathenau. His message (166-67): "All talk of cause and effect is secular
-                history, and secular
-                history is a diversionary tactic."
-            </p>
+                        episode in Pynchon's <i>V.</i>, also involving Weissmann [Blicero]) who
+                        guides him to a job in rocket
+                        development. Leni leaves Franz (taking their daughter, Ilse) for Peter Sachsa,
+                        who--when she
+                        arrives--is conducting a s&eacute;ance (he, too, being a medium) to contact
+                        the spirit of Walter
+                        Rathenau. His message (166-67): "All talk of cause and effect is secular
+                        history, and secular
+                        history is a diversionary tactic."
+                    </p>
                     <p id="1-20">
                         [20] 167-174. The PISCES Christmas party. Pointsman and Maude Chilkes
                         in the closet.
                         Pointsman and Gwenhidwy go to the latter's flat. Gwenhidwy to Pointsman
                         (on what we will
-                learn to call the "preterite"): "How they <i>persist</i>." East London
-                as the "City Paranoiac":
-                Gwenhidwy imagines (or perceives?) that the poor and outcast have been
-                <i>placed </i>here to absorb
-                the brunt of rocket attacks from the Southeast.
-            </p>
+                        learn to call the "preterite"): "How they <i>persist</i>." East London
+                        as the "City Paranoiac":
+                        Gwenhidwy imagines (or perceives?) that the poor and outcast have been
+                        <i>placed </i>here to absorb
+                        the brunt of rocket attacks from the Southeast.
+                    </p>
                     <p id="1-21">
                         [21] 174-177. Roger and Jessica have taken her nieces (whose father
                         has been lost to the War)
-                to a pantomime of <i>Hansel and Gretel</i>, interrupted by a rocket impact
-                (cf. ending of <i>Gravity's Rainbow</i>?). Penelope (one of the nieces,
-                whose name should recall Homer's
-                <i>Odyssey</i>) thinks
-                bitterly of fathers "leaving their children alone in the forest." Roger
-                is more and more afraid of
-                losing Jessica, and love, to the War or to Jeremy/Beaver who "<i>is
-                </i>the War." "Oh, Jess. Jessica.
-                Don't leave me."
-            </p>
+                        to a pantomime of <i>Hansel and Gretel</i>, interrupted by a rocket impact
+                        (cf. ending of <i>Gravity's Rainbow</i>?). Penelope (one of the nieces,
+                        whose name should recall Homer's
+                        <i>Odyssey</i>) thinks
+                        bitterly of fathers "leaving their children alone in the forest." Roger
+                        is more and more afraid of
+                        losing Jessica, and love, to the War or to Jeremy/Beaver who "<i>is
+                        </i>the War." "Oh, Jess. Jessica.
+                        Don't leave me."
+                </p>
                 </article>
                 <hr />
                 <article>
