@@ -6,9 +6,6 @@ import Navbar from './components/Navbar'
 function App() {
     return (
         <>
-            <div>
-                Who's John Galt?
-            </div>
             <Router>
                 <Navbar />
                 <MainSwitch />

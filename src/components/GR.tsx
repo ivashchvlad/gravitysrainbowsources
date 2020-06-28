@@ -11,8 +11,8 @@ function GR() {
                 <div className="about">
                     <h3>Michael Davitt Bell</h3>
                     <h4>Williams College</h4>
-                    <h5>for information on the author, visit his
-                        <a href="https://www.williams.edu/Individuals/mbell/INDEX.HTM" target="blank">home page</a>
+                    <h5>for information on the author, visit
+                        his <a href="https://www.williams.edu/Individuals/mbell/INDEX.HTML" target="blank">home page</a>
                     </h5>
                 </div>
 
@@ -26,8 +26,7 @@ function GR() {
                     begin in the past
                     tense, but they tend to shift rapidly into the present tense (for a significant
                     exception--a flashback
-                    narrated entirely in the past tense--see the story of Franz P&ouml;kler,
-                    <a href="#3-11">3: [11]</a>).
+                    narrated entirely in the past tense--see the story of Franz P&ouml;kler, <a href="#3-11">3: [11]</a>).
                     The narrator is also
                     capable, upon occasion, of flashes <i>forward</i>. Point of view shifts
                     frequently (see, for instance, <a href="#1-14">1: [14]</a>) and is sometimes indeterminate ("omniscient"?).

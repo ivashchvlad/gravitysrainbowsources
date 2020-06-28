@@ -8,6 +8,7 @@ module.exports = {
     output: {
         filename: `[name].[hash].js`,
         path: path.join(__dirname, '/dist'),
+        publicPath: '/'
     },
     devtool: "source-map",
     resolve: {
@@ -73,6 +74,9 @@ module.exports = {
                 ]
             }
         ]
+    },
+    devServer: {
+        historyApiFallback: true,
     },
     plugins: [
         new HtmlWebpackPlugin({
