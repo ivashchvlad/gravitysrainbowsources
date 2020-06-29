@@ -76,8 +76,9 @@ header {
 
 nav {
     position: fixed;
-    top: -1000px;
+    top: -200vh;
     left: 0;
+    z-index: 10;
     padding: 50px;
     overflow: scroll;
     width: 100%;

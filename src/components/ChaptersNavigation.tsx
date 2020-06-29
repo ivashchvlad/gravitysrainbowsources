@@ -1,7 +1,7 @@
 import * as React from 'react'
 
 interface Props {
-    handleClick: (e: any) => void
+    handleClick: (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => void
 }
 
 export default function ChaptersNavigation({handleClick}: Props) {

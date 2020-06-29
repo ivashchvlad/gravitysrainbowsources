@@ -1,4 +1,4 @@
-import * as React from 'react'
+import React from 'react'
 import { Link, Switch, Route } from 'react-router-dom'
 import ChaptersNavigation from './ChaptersNavigation'
 import '../scss/navbar.scss'
@@ -29,10 +29,10 @@ export default function Navbar() {
             </header>
             <nav className={active ? 'active' : undefined}>
                 <h3>Navigation:</h3>
-                <h4>
+                <h4 onClick={handleClick}>
                     <Link to="/main">Main</Link>
                 </h4>
-                <h4>
+                <h4 onClick={handleClick}>
                     <Link to="/">What Happened in GR?</Link>
                 </h4>
                 <Switch>

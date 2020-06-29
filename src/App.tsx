@@ -1,17 +1,17 @@
-import * as React from 'react'
+import React from 'react'
 import { BrowserRouter as Router } from 'react-router-dom'
 import MainSwitch from './components/MainSwitch'
 import Navbar from './components/Navbar'
+import Footer from './components/Footer'
 
-function App() {
+export default function App() {
     return (
         <>
             <Router>
                 <Navbar />
                 <MainSwitch />
+                <Footer />
             </Router>
         </>
     )
 }
-
-export default App

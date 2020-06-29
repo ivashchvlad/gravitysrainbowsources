@@ -1,4 +1,4 @@
-import * as React from 'react'
+import React from 'react'
 import '../grstyle.css'
 
 function GR() {
@@ -6,7 +6,7 @@ function GR() {
         <>
             <main>
                 <h1>
-                    some things that "happen" (more or less) in gravity's rainbow
+                some things that "happen" (more or less) in gravity's rainbow
                 </h1>
                 <div className="about">
                     <h3>Michael Davitt Bell</h3>

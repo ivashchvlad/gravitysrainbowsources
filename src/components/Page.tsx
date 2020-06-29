@@ -8,7 +8,7 @@ interface IPageProps extends RouteProps {
 
 const Page: FunctionComponent<IPageProps> = props => {
     useEffect(() => {
-        document.title = "GR sources | " + props.title;
+        document.title = props.title + "| GR sources" ;
     });
 
     const { title, ...rest } = props;
