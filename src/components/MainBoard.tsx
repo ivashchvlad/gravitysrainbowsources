@@ -1,9 +1,29 @@
-import * as React from 'react'
+import React from 'react'
 import Card from './Card'
 import { Link } from 'react-router-dom'
+import smoothscroll from 'smoothscroll-polyfill';
 import '../scss/mainboard.scss'
 
 export default function MainBoard() {
+    const musicSlider = React.useRef(null);
+    const video_el = React.useRef(null);
+    const handleSlide = (e: any) => {
+        smoothscroll.polyfill()
+        if (e.target.className == "button-left") {
+            musicSlider.current.scroll({
+                top: 0,
+                left: musicSlider.current.scrollLeft - video_el.current.clientWidth,
+                behavior: 'smooth'
+            })
+        } else {
+            musicSlider.current.scroll({
+                top: 0,
+                left: musicSlider.current.scrollLeft + video_el.current.clientWidth,
+                behavior: 'smooth'
+            })
+        }
+    }
+
     return (
         <div className="mainboard">
             <div className="about">
@@ -60,11 +80,19 @@ export default function MainBoard() {
             </div>
             <div className="music">
                 <h4 className="music__title">Music:</h4>
-                <div className="music__content">
+                <div className="music__content" ref={musicSlider}>
+                    <div className="video" ref={video_el}>
                     <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/JUdvYOfaLAQ" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                    </div>
+                    <div className="video">
                     <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/lezoqO0d4g4" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                    </div>
+                    <div className="video">
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/_xse1QEhVmY" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                    </div>
                 </div>
+                <button onClick={handleSlide} className="button-left">&#5176;</button>
+                <button onClick={handleSlide} className="button-right">&#5171;</button>
             </div>
         </div>
     )
