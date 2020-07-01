@@ -9,8 +9,11 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 20px 0 20px;
-    backdrop-filter: blur(3px);
+    padding: 0px 50px 0 50px;
+    backdrop-filter: blur(5px);
+    @media (max-width: 414px) {
+        padding: 0px 20px 0 20px;
+    }
 }
 
 .header__burger {

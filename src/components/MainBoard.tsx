@@ -1,29 +1,10 @@
 import React from 'react'
-import Card from './Card'
 import { Link } from 'react-router-dom'
-import smoothscroll from 'smoothscroll-polyfill';
+import Card from './Card'
+import VideoSlider from './VideoSlider'
 import '../scss/mainboard.scss'
 
 export default function MainBoard() {
-    const musicSlider = React.useRef(null);
-    const video_el = React.useRef(null);
-    const handleSlide = (e: any) => {
-        smoothscroll.polyfill()
-        if (e.target.className == "button-left") {
-            musicSlider.current.scroll({
-                top: 0,
-                left: musicSlider.current.scrollLeft - video_el.current.clientWidth,
-                behavior: 'smooth'
-            })
-        } else {
-            musicSlider.current.scroll({
-                top: 0,
-                left: musicSlider.current.scrollLeft + video_el.current.clientWidth,
-                behavior: 'smooth'
-            })
-        }
-    }
-
     return (
         <div className="mainboard">
             <div className="about">
@@ -32,22 +13,18 @@ export default function MainBoard() {
                     <h1>Gravity's Rainbow</h1>
                     <h2>sources</h2>
                 </div>
-                <p>
+                <p><i>
                     Gravity's rainbow can be extreamly hard to understand.
                     I struggled myself and found a lot of interesting resources
                     that helped me out with it. So I thougth about sharing them.
-                </p>
+                </i></p>
             </div>
+            <h4>Links</h4>
             <div className="sources">
-                <Card imageSrc="https://images-na.ssl-images-amazon.com/images/I/81cCnee+3SL.jpg">
-                    <a href="https://www.amazon.com/s?k=gravity%27s+rainbow&rh=n%3A283155&dc&qid=1593350491&rnid=2941120011&ref=sr_nr_n_1">
-                        Buy the Book
-                    </a>
-                </Card>
-                <Card imageSrc="https://images-na.ssl-images-amazon.com/images/I/41w118sV1vL.jpg">
-                    <a href="https://www.amazon.com/Gravitys-Rainbow-Companion-Contexts-Pynchons-ebook/dp/B00400MR4I/ref=sr_1_2?dchild=1&keywords=gravity%27s+rainbow&qid=1593350491&rnid=2941120011&s=books&sr=1-2">
-                        Buy the Companion Book
-                    </a>
+                <Card imageSrc="https://images-na.ssl-images-amazon.com/images/I/A1dmzhFj+iL.jpg">
+                    <Link to="/">
+                        Some things that "happen" (more or less) in gravity's rainbow
+                    </Link>
                 </Card>
                 <Card imageSrc="https://styles.redditmedia.com/t5_2skte/styles/communityIcon_jdnxkooykp351.jpg?width=256&format=pjpg&s=23b1c7b7bac94de2e3f7113b6eeebc5563192dd9">
                     <a href="https://www.reddit.com/r/ThomasPynchon/">
@@ -64,36 +41,42 @@ export default function MainBoard() {
                         Impolex (film)
                     </a>
                 </Card>
-                <Card imageSrc="https://images-na.ssl-images-amazon.com/images/I/A1dmzhFj+iL.jpg">
-                    <Link to="/">
-                        Some things that "happen" (more or less) in gravity's rainbow
-                    </Link>
+                <Card imageSrc="https://images-na.ssl-images-amazon.com/images/I/41w118sV1vL.jpg">
+                    <a href="https://www.amazon.com/Gravitys-Rainbow-Companion-Contexts-Pynchons-ebook/dp/B00400MR4I/ref=sr_1_2?dchild=1&keywords=gravity%27s+rainbow&qid=1593350491&rnid=2941120011&s=books&sr=1-2">
+                        Buy the Companion Book
+                    </a>
+                </Card>
+                <Card imageSrc="https://images-na.ssl-images-amazon.com/images/I/81cCnee+3SL.jpg">
+                    <a href="https://www.amazon.com/s?k=gravity%27s+rainbow&rh=n%3A283155&dc&qid=1593350491&rnid=2941120011&ref=sr_nr_n_1">
+                        Buy the Book
+                    </a>
                 </Card>
             </div>
-            <div className="videos">
-                <h4 className="video__title">
-                    Videos:
-                </h4>
-                <a href="https://www.youtube.com/watch?v=exi6tuuUZ54&list=PL1imCIzhbzfNDyixDgZT7D4HEWt8cXF1H">
-                    Bookchemist Reading GR
-                </a>
+            <div className="reading-guide">
+                <h4>Reading Project with Bookchemist</h4>
+                <VideoSlider>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/exi6tuuUZ54" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/igdp6tFhTTI" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/zCiWUEy0Ngw" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/VcG-UyHzJUQ" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/BLuecZVkXoo" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/r-A7GeMtoUE" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/St2XzUEM3ic" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/4fAHXftWIYc" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/eUFUZ_gHWqs" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/rVaaTeQ1DDg" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/u5yLrIYVbS4" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                </VideoSlider>
             </div>
             <div className="music">
-                <h4 className="music__title">Music:</h4>
-                <div className="music__content" ref={musicSlider}>
-                    <div className="video" ref={video_el}>
+                <h4>Music</h4>
+                <VideoSlider>
                     <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/JUdvYOfaLAQ" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
-                    </div>
-                    <div className="video">
                     <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/lezoqO0d4g4" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
-                    </div>
-                    <div className="video">
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/_xse1QEhVmY" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
-                    </div>
-                </div>
-                <button onClick={handleSlide} className="button-left">&#5176;</button>
-                <button onClick={handleSlide} className="button-right">&#5171;</button>
+                </VideoSlider>
             </div>
+
         </div>
     )
 }
