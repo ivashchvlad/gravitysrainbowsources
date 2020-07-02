@@ -2,6 +2,14 @@ import React from 'react'
 import '../grstyle.css'
 
 function GR() {
+    const handleClick = (e: any) => {
+        e.preventDefault()
+        if (e.target.href) {
+            let el = document.getElementById(e.target.href.split('#')[1])
+            window.scrollTo(0, el.offsetTop - 50)
+        }
+    }
+
     return (
         <>
             <main>
@@ -26,10 +34,10 @@ function GR() {
                     begin in the past
                     tense, but they tend to shift rapidly into the present tense (for a significant
                     exception--a flashback
-                    narrated entirely in the past tense--see the story of Franz P&ouml;kler, <a href="#3-11">3: [11]</a>).
+                    narrated entirely in the past tense--see the story of Franz P&ouml;kler, <a onClick={handleClick} href="#3-11">3: [11]</a>).
                     The narrator is also
                     capable, upon occasion, of flashes <i>forward</i>. Point of view shifts
-                    frequently (see, for instance, <a href="#1-14">1: [14]</a>) and is sometimes indeterminate ("omniscient"?).
+                    frequently (see, for instance, <a onClick={handleClick} href="#1-14">1: [14]</a>) and is sometimes indeterminate ("omniscient"?).
                     And much of what "happens" (it's hard to
                     say how much) is fantasy (it's often hard to say whose). The sections
                     (chapters?) of each of the
@@ -173,7 +181,7 @@ function GR() {
                         Ernest
                         [Hemingway?] Pudding--World War I veteran, Pointsman's boss. His curious
                         "briefings" (cf.
-                        Mrs. Quoad's candy "surprises" in <a href="#1-15">[15]</a> below)?
+                        Mrs. Quoad's candy "surprises" in <a onClick={handleClick} href="#1-15">[15]</a> below)?
                     </p>
                     <p id="1-13">
                         [13] 83-92. What is known about Laszlo Jamf's experiments (during his
@@ -198,7 +206,7 @@ function GR() {
                         she recalls her
                         assignment in Holland: with Captain Blicero (formerly, e.g., in Pynchon's
                         <i>V.</i>, Lt. Weissman) and
-                        Gottfried, at rocket-launching area. Their Hansel and Gretel game (cf. <a href="#1-21">[21]</a>
+                        Gottfried, at rocket-launching area. Their Hansel and Gretel game (cf. <a onClick={handleClick} href="#1-21">[21]</a>
                         below). Blicero's
                         death-wish (the Oven)--<i>his </i>(switch in point of view) memories of
                         S&uuml;dwest Africa, the Herero
@@ -263,7 +271,7 @@ function GR() {
                     <p id="1-18">
                         [18] 145-154. Flashback (her point of view) to Nora Dodson-Truck's discovery
                         that Carroll
-                        Eventyr is a medium (cf. <a href="#1-5">[5]</a> above; but also NB.: "Lewis <i>Carroll</i>"
+                        Eventyr is a medium (cf. <a onClick={handleClick} href="#1-5">[5]</a> above; but also NB.: "Lewis <i>Carroll</i>"
                         was the pen name of the
                         mathematician and undressed-child photographer, Charles L. <i>Dodgson</i>.
                         Is this information help,
@@ -427,7 +435,7 @@ function GR() {
                         and the Riviera. The
                         first of the "Proverbs for Paranoids." (237) In Slothrop's dream or "revery,"
                         "the late Roland
-                Feldspath" (see <a href="#1-5">1: [5]</a> above) meditates on the reduction of "the Rocket's
+                Feldspath" (see <a onClick={handleClick} href="#1-5">1: [5]</a> above) meditates on the reduction of "the Rocket's
                 terrible passage . . . to
                 bourgeois terms." Slothrop, bothered by evidence of links between Allied
                 and German
@@ -588,9 +596,9 @@ function GR() {
                         Nordhausen. He recalls meeting his first African (Enzian), and Major Duane
                         Marvy. The "plot"
                         [which will thicken, then, strangely, thin]: Schweitar's information on
-                Imipolex G (see <a href="#2-7">2: [7]</a>
+                Imipolex G (see <a onClick={handleClick} href="#2-7">2: [7]</a>
                 above) points to Franz P&ouml;kler (see
-                <a href="#1-18">1: [18]</a> and <a href="#1-19">[19]</a> above), who came
+                <a onClick={handleClick} href="#1-18">1: [18]</a> and <a onClick={handleClick} href="#1-19">[19]</a> above), who came
                 to the Mittelwerke, an
                 underground rocket factory at Nordhausen, in 1944. The Shell file on Jamf
                 points to Lyle Bland
@@ -644,7 +652,7 @@ function GR() {
                         integral sign--but cf.
                         198). We are treated to a meditation on the importance of the double integral
                         and Brenschluss
-                (301). We learn Slothrop's reasons (cf. <a href="#2-8">2: [8]</a> above) for editing and
+                (301). We learn Slothrop's reasons (cf. <a onClick={handleClick} href="#2-8">2: [8]</a> above) for editing and
                 falsifying information,
                 changing names, on his London map (302). Moving deeper into the tunnel Slothrop
                 hears our
@@ -706,11 +714,11 @@ function GR() {
                         this linguistic
                         imperialism to the organic theories of language propounded by Sir Stephen
                         Dodson-Truck
-                [inverted "Turk"?] <a href="#2-3">2: [3]</a> above?). We learn about Galina, "the schoolmarm,"
+                [inverted "Turk"?] <a onClick={handleClick} href="#2-3">2: [3]</a> above?). We learn about Galina, "the schoolmarm,"
                 and about Dzaqyp
                 Qulan, the "native" schoolteacher, whose father was killed in the Kirghiz
                 massacre of 1916 (cf.
-                Fran van der Groov and the Dodoes, <a href="#1-14">1: [14]</a> above? the Herero massacre, <a
+                Fran van der Groov and the Dodoes, <a onClick={handleClick} href="#1-14">1: [14]</a> above? the Herero massacre, <a
                             href="#1-14">1: [14]</a>
                 above? the
                 attitude toward Indians implied by all the Western lingo here? Vietnam?).
@@ -804,7 +812,7 @@ function GR() {
             </p>
                     <p id="3-8">
                         [8] 383-390. Cut to the hijacked U-boat of the Argentine anarchists
-                (see <a href="#2-7">2: [7]</a> above,
+                (see <a onClick={handleClick} href="#2-7">2: [7]</a> above,
                 Squalidozzi--remember?). We learn the story behind Squalidozzi's disappearance
                 from Z&uuml;rich.
                 He was pursued by British Military Intelligence (Slothrop's Rolls Royce).
@@ -814,7 +822,7 @@ function GR() {
                 abandoned harmonica factory, and meets Gerhardt von G&ouml;ll ("Der Springer"),
                 a German
                 filmmaker (who made the Schwarzkommando film for Operation Blackwing--see
-                <a href="#1-14">1: [14]</a>
+                <a onClick={handleClick} href="#1-14">1: [14]</a>
                 above). He now offers to make a film of <i>Martin Fierro</i>, an epic
                 whose gaucho hero is regarded
                 by the anarchists as a saint. This has now become the major project of the
@@ -863,7 +871,7 @@ function GR() {
                         interrogated (after
                         noting that some of the hash has been taken) to find himself in an abandoned
                         movie set, where he
-                meets (at last--see <a href="#3-6">3: [6] above</a>) Margherita (Greta) Erdmann, the movie
+                meets (at last--see <a onClick={handleClick} href="#3-6">3: [6] above</a>) Margherita (Greta) Erdmann, the movie
                 actress, who is looking
                 for her lost daughter, Bianca. They come to the set of von G&ouml;ll's
                 <i>Alpdr&uuml;cken</i>, in which she (as
@@ -884,8 +892,8 @@ function GR() {
                     <p id="3-11">
                         [11] 397-433. (This long chapter, consisting mostly of one long
                         recollection, narrated in the past
-                tense, tells the story of Franz P&ouml;kler--see <a href="#1-18">1: [18]</a> and
-                <a href="#1-19">[19]</a> <a href="#3-1">3: [1]</a>
+                tense, tells the story of Franz P&ouml;kler--see <a onClick={handleClick} href="#1-18">1: [18]</a> and
+                <a onClick={handleClick} href="#1-19">[19]</a> <a onClick={handleClick} href="#3-1">3: [1]</a>
                 above. cf. the story of Franz's
                 loss of Leni and Ilse to the story of Roger and Jessica?) It was his arousal
                 from seeing
@@ -905,7 +913,7 @@ function GR() {
                 He turned to the
                 Rocket, in earnest, to pull himself together after Leni left him. He recalls
                 the "electro-mysticism"
-                of Kurt Mondaugen (see <a href="#1-19">1: [19]</a> above). His memories of early rocket days
+                of Kurt Mondaugen (see <a onClick={handleClick} href="#1-19">1: [19]</a> above). His memories of early rocket days
                 also include
                 Weissmann (Blicero) and Enzian. He moved to Peenem&uuml;nde (where rockets
                 were tested) in
@@ -947,7 +955,7 @@ function GR() {
                 And "so it has
                 gone for the six years since," his need of her used by Weissmann (cf.
                 Pointsman/Pudding/Katje,
-                <a href="#2-4">2: [4]</a> above?) to keep P&ouml;kler in line. He compares her regularly repeated
+                <a onClick={handleClick} href="#2-4">2: [4]</a> above?) to keep P&ouml;kler in line. He compares her regularly repeated
                 appearances to the
                 regular repetition of frames in film: she is "the moving image of a daughter."
                 (422)
@@ -955,7 +963,7 @@ function GR() {
                     <p>
                         He was transferred, in 1944, to Nordhausen, where he dreamed about a light
                         bulb (426-27: cf.
-                "The Story of Byron the Bulb," <a href="#4-3">4: [3]</a> below?). He became increasingly aware
+                "The Story of Byron the Bulb," <a onClick={handleClick} href="#4-3">4: [3]</a> below?). He became increasingly aware
                 of the
                 concentration camp, Dora, next to Nordhausen. Which, he learned, was where
                 "Ilse" was
@@ -991,7 +999,7 @@ function GR() {
                 asleep, he takes five kilos of the
                 hashish liberated from Potsdam (keeping the depleted sixth kilo for himself)
                 to the Chicago Bar
-                (see <a href="#3-6">3: [6]</a> above), then to S&auml;ure Bummer's cellar. It is abandoned,
+                (see <a onClick={handleClick} href="#3-6">3: [6]</a> above), then to S&auml;ure Bummer's cellar. It is abandoned,
                 but he finds a white knight
                 (symbol of Der Springer), made out of plastic (guess which kind?), with a
                 message from S&auml;ure.
@@ -1077,9 +1085,9 @@ function GR() {
                         seems to be an ongoing orgy, Slothrop catches sight of Bianca, who is eleven
                         or twelve, "a
                         knockout." A woman tells how Margherita, meeting Wimpe in Berlin
-                (see <a href="#3-5">3: [5]</a> above),
+                (see <a onClick={handleClick} href="#3-5">3: [5]</a> above),
                 discovered her now favorite drug, Oneirine (developed--remember?--by Laszlo
-                Jamf; see <a href="#3-8">3: [8]</a>
+                Jamf; see <a onClick={handleClick} href="#3-8">3: [8]</a>
                 above--and NB.: "oneiric" means "of or relating to dreams"). Slothrop then
                 meets Thanatz, who
                 describes witnessing the "Max Weber charisma" of the rocket, which "the State
@@ -1088,7 +1096,7 @@ function GR() {
                 Heath" (which he
                 visited with Margherita and the S/M show): "Gottfried. God's peace, which
                 I trust he's found."
-                (465; see <a href="#1-14">1: [14]</a> above.) He begins to describe Blicero's breakdown and
+                (465; see <a onClick={handleClick} href="#1-14">1: [14]</a> above.) He begins to describe Blicero's breakdown and
                 the "last day" (465),
                 but he's interrupted by Margherita and Bianca, who go into their own S/M
                 act. The crowd is so
@@ -1145,18 +1153,18 @@ function GR() {
                         get back to Bianca; but he learns she's disappeared, and Margherita has locked
                         herself in the
                         head. After finding a piece of Bianca's frock in the engine room
-                (cf. <a href="#3-22">3: [22]</a> below?), Slothrop
+                (cf. <a onClick={handleClick} href="#3-22">3: [22]</a> below?), Slothrop
                 confronts Margherita. And then, listening to <i>her </i>story (which is
                 given to us, in a different form,
                 in the chapter that follows), he is overcome by nausea (cf. the beginning
                 of the Sodium Amytal
-                fantasy in <a href="#1-10">1: [10]</a> above?).
+                fantasy in <a onClick={handleClick} href="#1-10">1: [10]</a> above?).
             </p>
                     <p id="3-17">
                         [17] 482-488. We begin with episodes from Greta's (here, "Gretel's")
                         film career. For instance
                 in <i>Sandw&uuml;ste von Neumexiko</i> (cf. Roger?) she rode a colt named
-                "Snake" (see <a href="#3-5">3: [5]</a> above;
+                "Snake" (see <a onClick={handleClick} href="#3-5">3: [5]</a> above;
                 small world). We move gradually to her memories of her visit, with Thanatz,
                 to "the Heath."
                 "Something was being planned, it involved the boy Gottfried." She left the
@@ -1186,11 +1194,11 @@ function GR() {
                         [19] 492-505. Slothrop is rescued by Frau Gnahb and her son, Otto, in
                         a fishing smack. They
                         are heading for Swinem&uuml;nde. Arrived there, Slothrop uses his white
-                chess knight (see <a href="#3-12">3: [12]</a>
+                chess knight (see <a onClick={handleClick} href="#3-12">3: [12]</a>
                 above) to make contact with Der Springer, Gerhardt von G&ouml;ll, the
                 film-director-turned-black-marketeer from whom he hopes to obtain (or at
                 least learn about) the "Schwarzger&auml;t." Von G&ouml;ll,
-                Slothrop, and Otto are then joined by Klaus N&auml;rrisch (see <a href="#3-13">3: [13]</a> above),
+                Slothrop, and Otto are then joined by Klaus N&auml;rrisch (see <a onClick={handleClick} href="#3-13">3: [13]</a> above),
                 who is now working
                 for von G&ouml;ll. Der Springer, after discussing the relationship of "elite
                 and preterite," sings "Bright
@@ -1241,7 +1249,7 @@ function GR() {
                         burst into an
                         abandoned room. They are too late; Christian's sister, Maria, has already
                         been abducted by
-                Joseph Ombindi and the Empty Ones (see <a href="#3-3">3: [3]</a> above), for an enforced abortion.
+                Joseph Ombindi and the Empty Ones (see <a onClick={handleClick} href="#3-3">3: [3]</a> above), for an enforced abortion.
                 As Enzian
                 and his cohorts head for the (Jamf) refinery on motorcycles, Enzian begins
                 to see the bombing of
@@ -1257,7 +1265,7 @@ function GR() {
                 find the center
                 (whether rocket, refinery, Volkswagen factory), the "true text." He fantasizes
                 an address to all
-                the assembled Erdschweinh&ouml;hle (see <a href="1-3">1: [3]</a> above): "<i>My people,
+                the assembled Erdschweinh&ouml;hle (see <a onClick={handleClick} href="1-3">1: [3]</a> above): "<i>My people,
                     I have had a vision</i>" (525; cf.
                 M.L. King, Jr.?). "Somewhere," he thinks, formulating the ideology of his
                 "new Search," ". . . is
@@ -1291,13 +1299,13 @@ function GR() {
                         in June, of a massive
                 <i>E. Coli </i>infection (contracted, presumably, during his sessions with
                 Katje/Domina Nocturna--see
-                <a href="#2-4">2: [4]</a> above). Left alone, Katje finds the film that was shot of her, secretly,
+                <a onClick={handleClick} href="#2-4">2: [4]</a> above). Left alone, Katje finds the film that was shot of her, secretly,
                 at Pirate's (see 1:
                 [14] above--and cf. Katje, here, to Margherita Erdmann). She then screens
                 a film of the octopus,
                 Grigori, watching and responding to the <i>first</i> film (cf. Grigori,
                 here, to Franz P&ouml;kler responding
-                to <i>Alpdr&uuml;cken</i>?--see <a href="#3-11">3: [11]</a> above). Spliced to the end of
+                to <i>Alpdr&uuml;cken</i>?--see <a onClick={handleClick} href="#3-11">3: [11]</a> above). Spliced to the end of
                 this is a film of Osbie Feel, narrating
                 into the camera the scenario of <i>his</i> film, "Doper's Greed" (534-5;
                 is this, perhaps, a model of the
@@ -1314,7 +1322,7 @@ function GR() {
                 counterforce would have had to arise." (536; NB. title of Part 4.)
             </p>
                     <p id="3-24">
-                        [24] 537-548. Pirate dreams (cf. <a href="#1-1">1: [1]</a>? Is this, in some sense, a
+                        [24] 537-548. Pirate dreams (cf. <a onClick={handleClick} href="#1-1">1: [1]</a>? Is this, in some sense, a
                 <i>continuation </i>of the dream that
                 opens the book?) of arriving, as a "novice," at a kind of Guilt-Convention.
                 Father Rapier
@@ -1329,12 +1337,12 @@ function GR() {
                 "side." But cf. all the talk here about "turning"--e.g., "turn again" [544]--to
                 T.S. Eliot's "Ash
                 Wednesday"?) Pirate meets, among others, Sir Stephen Dodson-Truck
-                (see <a href="#2-3">2: [3]</a> above). He
+                (see <a onClick={handleClick} href="#2-3">2: [3]</a> above). He
                 then comes to recognize that there can be, for him, no mercy, that he is
                 doomed "to stay down
                 among the Preterite, . . .impossible to locate or to redeem." (544) Katje
                 arrives. There is debate
-                about the guilt of Frans van der Groov (545; see <a href="#1-14">1: [14]</a> above). "But the
+                about the guilt of Frans van der Groov (545; see <a onClick={handleClick} href="#1-14">1: [14]</a> above). "But the
                 People will never love
                 you," she says to Pirate, who is holding her, "or me. . . . Do you know where
                 that puts us?" (548)
@@ -1343,7 +1351,7 @@ function GR() {
                 dancing Preterition." (548)
             </p>
                     <p id="3-25">
-                        [25] 549-557. Slothrop, wearing Tchitcherine's uniform (see <a href="#3-20">3: [20]</a>
+                        [25] 549-557. Slothrop, wearing Tchitcherine's uniform (see <a onClick={handleClick} href="#3-20">3: [20]</a>
                 above), is now walking
                 alone in the Zone. "The Nationalities are on the move." The potato fields
                 have been stripped by
@@ -1357,13 +1365,13 @@ function GR() {
                 of his meeting with a
                 fat kid, Ludwig, who's looking for his lost lemming, Ursula (553; cf. the
                 racial suicide program
-                of the Empty Ones?). Slothrop reassures Ludwig (cf. <a href="#3-10">3: [10]</a> above?) and
+                of the Empty Ones?). Slothrop reassures Ludwig (cf. <a onClick={handleClick} href="#3-10">3: [10]</a> above?) and
                 joins him in his
                 search. As they look for Ursula, Slothrop thinks about his "first American
                 ancestor William," a
                 dissenter from "the Wintrop machine" (cf. Amy Sprue, 329, above?). William
                 fled from Boston
-                to the Berkshires, where he raised pigs (cf. <a href="#3-28">3: [28]</a> below?) with his son
+                to the Berkshires, where he raised pigs (cf. <a onClick={handleClick} href="#3-28">3: [28]</a> below?) with his son
                 John. (NB. Nathaniel
                 Hawthorne's first American ancestor was also named William, and also had
                 a son named John.
@@ -1385,7 +1393,7 @@ function GR() {
                 a town near the sea,
                 when they chance upon--of all people--Major Duane Marvy, warming himself
                 in front of a fire
-                (see <a href="#3-1">3: [1]</a> <a href="#3-2">[2]</a> and <a href="#3-4">[4]</a> above).
+                (see <a onClick={handleClick} href="#3-1">3: [1]</a> <a onClick={handleClick} href="#3-2">[2]</a> and <a onClick={handleClick} href="#3-4">[4]</a> above).
             </p>
                     <p id="3-26">
                         [26] 557-563. Marvy--seeing the Russian uniform, and worried about his
@@ -1422,7 +1430,7 @@ function GR() {
                         know about his
                         vendetta against Enzian? Listening to Marvy and Chicklitz talk, Tchitcherine
                         (like Enzian--
-                see <a href="#3-21">3: [21]</a> above) begins to suspect a conspiracy: "<i>A Rocket-cartel
+                see <a onClick={handleClick} href="#3-21">3: [21]</a> above) begins to suspect a conspiracy: "<i>A Rocket-cartel
                 </i>transcending national
                 boundaries, a "Rocket-state whose borders he cannot cross." (566)
             </p>
@@ -1439,16 +1447,16 @@ function GR() {
                         This he does, next
                         day, dressed in a pig suit. Later, the police brutally break up the village's
                         black market (cf. the
-                death of Peter Sachsa?--see <a href="#1-18">1: [18]</a> and <a href="#1-19">[19]</a>
-                        <a href="#2-3">2: [3]</a> above). Slothrop is
+                death of Peter Sachsa?--see <a onClick={handleClick} href="#1-18">1: [18]</a> and <a onClick={handleClick} href="#1-19">[19]</a>
+                        <a onClick={handleClick} href="#2-3">2: [3]</a> above). Slothrop is
                 rescued from the ensuing
                 riot by a girl with whom he hides (cf. Bianca?), and who then helps him escape.
                 Back on the
                 road, alone, he befriends a fellow pig. Song: "A pig is a jolly companion."
                 (575) Next day, they
-                enter Zw&ouml;lfkinder (see <a href="#3-11">3: [11]</a> above). Slothrop meets the pig's owner,
+                enter Zw&ouml;lfkinder (see <a onClick={handleClick} href="#3-11">3: [11]</a> above). Slothrop meets the pig's owner,
                 P&ouml;kler. Realizing
-                suddenly that he's heard of P&ouml;kler (see <a href="#3-1">3: [1]</a> above), Slothrop asks
+                suddenly that he's heard of P&ouml;kler (see <a onClick={handleClick} href="#3-1">3: [1]</a> above), Slothrop asks
                 him about the Schwarzger&auml;t.
                 But P&ouml;kler, first, tells him about Ilse.
             </p>
@@ -1459,13 +1467,13 @@ function GR() {
                         Central to the
                         appeal of both are fantasies of brutally transcendent power. Klein-Rogge
                         played Dr. Mabuse (a
-                film projection of Hugo Stinnes--see <a href="#3-1">3: [1]</a> above), "the savage throwback,
+                film projection of Hugo Stinnes--see <a onClick={handleClick} href="#3-1">3: [1]</a> above), "the savage throwback,
                 the charismatic flash."
                 (579) P&ouml;kler recalls Jamf's last lecture: "move beyond life toward
                 the inorganic." (580) But
                 Jamf himself stayed with carbon, and moved to America, "under the sinister
                 influence of Lyle
-                Bland" (Slothrop's "Uncle Lyle"--see, again, <a href="#3-1">3: [1]</a> above).
+                Bland" (Slothrop's "Uncle Lyle"--see, again, <a onClick={handleClick} href="#3-1">3: [1]</a> above).
             </p>
                     <p id="3-30">
                         [30] 580-591. (The story of Lyle Bland and the Masons.) We learn about
@@ -1494,7 +1502,7 @@ function GR() {
                         really something eerie,
                         Messianic, extrasensory in Earth's mindbody" (590; his mysticism is compared
                         to that reported
-                by the late Walter Rathenau to Carroll Eventyr--see <a href="#1-19">1: [19]</a> above). Finally
+                by the late Walter Rathenau to Carroll Eventyr--see <a onClick={handleClick} href="#1-19">1: [19]</a> above). Finally
                 he announced to his
                 family: "Tonight, I am going out for good." And he did.
             </p>
@@ -1505,7 +1513,7 @@ function GR() {
                 looking for Slothrop--who,
                 they learn from a British corporal, is in town, wearing a pig suit. At an
                 alcohol dump, the fuel
-                now fuelling a party, Seaman Bodine (see <a href="#3-6">3: [6]</a> and <a href="#3-8">[8]</a> above)
+                now fuelling a party, Seaman Bodine (see <a onClick={handleClick} href="#3-6">3: [6]</a> and <a onClick={handleClick} href="#3-8">[8]</a> above)
                 is promoting a runciple spoon
                 fight. Slothrop's nearby, in a trailer, still wearing his pig suit. As
                 the police close in he escapes
@@ -1544,12 +1552,12 @@ function GR() {
                 one M&ouml;llner explains
                 to Bodine that von G&ouml;ll is very busy; there are, in any case, no papers
                 (the discharge von G&ouml;ll
-                promised to Slothrop--see <a href="#3-22">3: [22]</a> above) for the sailor's friend.
+                promised to Slothrop--see <a onClick={handleClick} href="#3-22">3: [22]</a> above) for the sailor's friend.
             </p>
                     <p id="3-32">
                         [32] 610-616. Tchitcherine has traced Weissmann's rocket battery to
                         the L&uuml;neberg Heath; but
-                what he has found there is the set of <i>Martin Fierro </i>(see <a href="#3-8">3: [8]</a>
+                what he has found there is the set of <i>Martin Fierro </i>(see <a onClick={handleClick} href="#3-8">3: [8]</a>
                 above), which he's never read.
                 But the singing-duel is now being filmed, and he recognizes its similarity
                 to the one he saw in
@@ -1570,13 +1578,13 @@ function GR() {
                 these dogs, in order to
                 facilitate the re-taking of the village, has been contracted to Pointsman.
                 He is now in official
-                disgrace, since the castrating of Marvy. Clive Mossmoon (see <a href="#1-5">1: [5]</a> and
-                <a href="#2-14">2: [4]</a> above) and Sir
+                disgrace, since the castrating of Marvy. Clive Mossmoon (see <a onClick={handleClick} href="#1-5">1: [5]</a> and
+                <a onClick={handleClick} href="#2-14">2: [4]</a> above) and Sir
                 Marcus Scammony discuss what is to be done about Pointsman--and about "the
                 American" (i.e.,
                 Slothrop). Sir Marcus's "idle and bitchy faggotry" is contrasted with the
                 loving homosexuality of
-                the World War I battlefields (cf. Pudding's memories, <a href="#2-14">2: [4]</a> above?).
+                the World War I battlefields (cf. Pudding's memories, <a onClick={handleClick} href="#2-14">2: [4]</a> above?).
                 "Homosexuality in high
                 places is just a carnal afterthought now, and the real and only fucking is
                 done on paper." (616)
@@ -1595,13 +1603,13 @@ function GR() {
                 V-E day Pirate has lost
                 "his odd talent for living the fantasies of others," but he's still "haunted"
                 by Frans van der Groov
-                (see <a href="#1-14">1: [14]</a> above). Beneath him, Gustav and S&auml;ure Bummer
-                (see <a href="#3-12">3: [12]</a> above) are still
+                (see <a onClick={handleClick} href="#1-14">1: [14]</a> above). Beneath him, Gustav and S&auml;ure Bummer
+                (see <a onClick={handleClick} href="#3-12">3: [12]</a> above) are still
                 arguing about Beethoven vs. Rossini (621-2). Slothrop, elsewhere in the
                 Zone, finds his
                 harmonica, soaking in a stream--the same harmonica, in fact, that he lost
                 at the Roseland
-                Ballroom in 1938 or 1939 (see <a href="#1-10">1 [10]</a> above); but he doesn't remember. "Yup,
+                Ballroom in 1938 or 1939 (see <a onClick={handleClick} href="#1-10">1 [10]</a> above); but he doesn't remember. "Yup,
                 still thinking
                 there's a way to get back . . . America. Poor asshole, he can't let her
                 go." (630) Eventually,
@@ -1625,9 +1633,9 @@ function GR() {
                         do "what's right" about Slothrop--whom Jessica regards mainly as a monster.
                         The war over,
                         Jessica was leaving--and left, to go to Cuxhaven, with Beaver
-                (see <a href="#1-16">1: [16]</a>
+                (see <a onClick={handleClick} href="#1-16">1: [16]</a>
                 above). Milton
-                Gloaming (see <a href="#1-5">1: [5]</a> above), back from the Zone, filled Roger in on "the
+                Gloaming (see <a onClick={handleClick} href="#1-5">1: [5]</a> above), back from the Zone, filled Roger in on "the
                 great struggle for the
                 IG's intelligence machinery" (630), to which Slothrop seemed quite important.
                 Mexico arrives
@@ -1637,10 +1645,10 @@ function GR() {
                 reception room; backed into
                 Pointsman's "shadow-corner," he enters a bizarre Hawaii fantasy (634-5; a
                 Slothropian
-                "appearance"?--note the language, and cf. Slothrop's shirt, <a href="#2-1">2: [1]</a> above?).
+                "appearance"?--note the language, and cf. Slothrop's shirt, <a onClick={handleClick} href="#2-1">2: [1]</a> above?).
                 Mexico finds
-                Pointsman in the office of Clive Mossmoon (see <a href="#1-4">1: [5]</a> and
-                <a href="#2-4">2: [4]</a> above), where
+                Pointsman in the office of Clive Mossmoon (see <a onClick={handleClick} href="#1-4">1: [5]</a> and
+                <a onClick={handleClick} href="#2-4">2: [4]</a> above), where
                 a meeting is in
                 progress. He leaps on the conference table, and pisses all over the assembled
                 elite--except
@@ -1650,11 +1658,11 @@ function GR() {
                 "We-system." "Well,"
                 replies Roger, "you're playing Their game, then." (638) Sir Stephen Dodson-Truck
                 is there (see
-                <a href="#2-3">2: [3]</a> and <a href="#3-24">3: [24]</a> above); we learn about the fate of his wife, Nora
-                (see <a href="#1-18">1: [18]</a> above): she has
+                <a onClick={handleClick} href="#2-3">2: [3]</a> and <a onClick={handleClick} href="#3-24">3: [24]</a> above); we learn about the fate of his wife, Nora
+                (see <a onClick={handleClick} href="#1-18">1: [18]</a> above): she has
                 identified with Gravity, and become victim to practical jokes from her friends.
                 (639) Thomas
-                Gwenhidwy (see <a href="#1-17">1: [17]</a> and <a href="#1-20">1: [20]</a> above) is also there.
+                Gwenhidwy (see <a onClick={handleClick} href="#1-17">1: [17]</a> and <a onClick={handleClick} href="#1-20">1: [20]</a> above) is also there.
                 And in spite of his doubts, Roger joins
                 them. Which is why (back to this chapter's opening "present") Roger is on
                 the Autobahn, driving into Cuxhaven.
@@ -1668,7 +1676,7 @@ function GR() {
                         frequencies.
                         They hear somebody "playing blues on a mouth harp" in the dark (624; another
                         Slothropian
-                "appearance"?). The colonel is from Kenosha, Wisconsin (cf. <a href="#1-10">1: [10]</a> above?).
+                "appearance"?). The colonel is from Kenosha, Wisconsin (cf. <a onClick={handleClick} href="#1-10">1: [10]</a> above?).
                 We shift (in the
                 colonel's fantasy) to a dialogue between "Skippy" and "Mister Information"--about
                 "Happyville,"
@@ -1694,7 +1702,7 @@ function GR() {
                 been thwarted; he "is
                 condemned to go on forever, knowing the truth and powerless to change anything."
                 (655; cf.
-                Pirate's hopes for "Creative Paranoia," <a href="#4-2">4: [2]</a> above?) The story over,
+                Pirate's hopes for "Creative Paranoia," <a onClick={handleClick} href="#4-2">4: [2]</a> above?) The story over,
                 Lazslo Jamf ("Mr.
                 Information"?) walks away; "the colonel is left alone in Happyville." Then,
                 his throat is wholly
@@ -1706,19 +1714,19 @@ function GR() {
                         sailor suits, singing "Pa-ra-noooiia" (657; "ooooi"?). She was not ready
                         for the "blackness." She
                         meets, for the first time, Enzian, who talks to her about the "Raketen-Stadt"
-                (660; cf. <a href="#4-6">4: [6]</a>
+                (660; cf. <a onClick={handleClick} href="#4-6">4: [6]</a>
                 below?), and about Weissmann: "Whatever happened at the end, he has
                 transcended." (660-61)
                 He recalls what Weissmann, in a letter, said about Katje (662). He tells
                 her the Hereros have
                 someone "who was with Blicero in May" (this being, we learn in the next chapter,
                 Thanatz--see
-                <a href="#3-14">3: [14]</a> above). Katje is invited to attend the interrogation.
+                <a onClick={handleClick} href="#3-14">3: [14]</a> above). Katje is invited to attend the interrogation.
             </p>
                     <p id="4-5">
                         [5] 663-673. "You will want cause and effect. All right." (663) Thanatz
                 fell off the <i>Anubis </i>in
-                the same storm that sent Slothrop overboard (see <a href="#3-18">3: [18]</a> above). He was
+                the same storm that sent Slothrop overboard (see <a onClick={handleClick} href="#3-18">3: [18]</a> above). He was
                 rescued by a Polish
                 undertaker, trying (in order to make him better in his particular line of
                 work) to get struck by
@@ -1726,17 +1734,17 @@ function GR() {
                 ashore, he gets his
                 wish (664-65). Thanatz then encounters a village of male homosexuals, liberated
                 (or, as they see
-                it, "banished") from Dora (see <a href="#3-11">3: [11]</a> above). They have reproduced, in
+                it, "banished") from Dora (see <a onClick={handleClick} href="#3-11">3: [11]</a> above). They have reproduced, in
                 their "freedom," a
                 "phantom SS command," modelled on their fantasy of the Rocket-structure at
                 the Mittelwerke.
                 They are waiting for Blicero, of whom they've only heard, to be their leader.
                 Thanatz has come
-                to be haunted by his memories of Blicero (see <a href="#3-14">3: [14]</a> above). He seeks
+                to be haunted by his memories of Blicero (see <a onClick={handleClick} href="#3-14">3: [14]</a> above). He seeks
                 him out, however, at a
                 nearby gasworks--recalling, meanwhile, Peter Sachsa's prewar s&eacute;ances
-                (668; see <a href="#1-5">1: [5]</a> <a href="#1-18">[18]</a> and
-                <a href="#1-19">[19]</a> above). Thanatz is nabbed by the Russians, then freed (by mistake)
+                (668; see <a onClick={handleClick} href="#1-5">1: [5]</a> <a onClick={handleClick} href="#1-18">[18]</a> and
+                <a onClick={handleClick} href="#1-19">[19]</a> above). Thanatz is nabbed by the Russians, then freed (by mistake)
                 by Polish guerillas. So
                 begin his "lessons in being preterite" (668). He travels the Zone as a DP.
                 His memory of the last
@@ -1754,7 +1762,7 @@ function GR() {
                 00000 was fired from, and
                 which way it was pointed." (673) All this brings the various Herero factions
                 together, reconciles
-                them. Maria has even appeared in a dream to Christian (see <a href="#3-21">3: [21]</a> above),
+                them. Maria has even appeared in a dream to Christian (see <a onClick={handleClick} href="#3-21">3: [21]</a> above),
                 saying she seeks no
                 revenge on Ombindi.
             </p>
@@ -1763,7 +1771,7 @@ function GR() {
                         682, below] what's left
                         of Slothrop's "point of view," since his "dispersal.") We are in the
                         Raketen-Stadt, "where the
-                <i>Father </i>["Broderick"--see <a href="#3-1">3: [1]</a> above] plots constantly to kill
+                <i>Father </i>["Broderick"--see <a onClick={handleClick} href="#3-1">3: [1]</a> above] plots constantly to kill
                 his son." Tyrone sets out to
                 rescue the "Radiant Hour," stolen from the day's 24 by "colleagues of the
                 Father, for sinister
@@ -1808,7 +1816,7 @@ function GR() {
                 Next, "A Moment
                 of Fun with Takeshi and Ichizo, the Komical Kamikazes" (690-92): they keep
                 learning from "old
-                Kenosha (cf. <a href="#1-10">1: [10]</a> and <a href="#4-3">4: [3]</a> above?)
+                Kenosha (cf. <a onClick={handleClick} href="#1-10">1: [10]</a> and <a onClick={handleClick} href="#4-3">4: [3]</a> above?)
                 the loony radarman" that no American targets are within
                 range. Then, "Streets" (692-94): Slothrop finds (he doesn't know where)
                 a newspaper fragment--"a wirephoto of a giant white cock, dangling in the
@@ -1822,7 +1830,7 @@ function GR() {
                 roaring of the sun," in towns which turn out to be "on the borders of <i>Time
                     Zones</i>"--was it
                 "Kenosha, Wisconsin?" (696)--where the Kenosha Kid is caught in a "sound-shadow"
-                (cf. <a href="#4-2">4: [2]</a>
+                (cf. <a onClick={handleClick} href="#4-2">4: [2]</a>
                 above?). Then, "Witty Repartee" (697-98): more of Ichizo and Takeshi, then
                 some information
                 on the Hotchkiss machine gun. Then, "Heart-to-Heart, Man-to-Man" (698-99):
@@ -1840,7 +1848,7 @@ function GR() {
                     <p id="4-7">
                         [7] 700-706. Tchitcherine is alone now; Soviet intelligence officer,
                         Nicolai (yes) Ripov, is
-                closing in. Tchitcherine remembers what Wimpe (see, for instance, <a href="#3-5">3: [5]</a>
+                closing in. Tchitcherine remembers what Wimpe (see, for instance, <a onClick={handleClick} href="#3-5">3: [5]</a>
                 above) once said to
                 him: "Marxist dialectic s? That's <i>not </i>an opiate, eh?" (701) The
                 peculiarity of Oneirine:
@@ -1859,19 +1867,19 @@ function GR() {
                     <p id="4-8">
                         [8] 706-717. The Gross Suckling Conference (named after the inn where
                         it was held): Ensign
-                Morituri (see <a href="#3-16">3: [16]</a> above), Carroll Eventyr
-                (see <a href="#1-5">1: [5]</a> and <a href="#1-18">[18]</a> above),
+                Morituri (see <a onClick={handleClick} href="#3-16">3: [16]</a> above), Carroll Eventyr
+                (see <a onClick={handleClick} href="#1-5">1: [5]</a> and <a onClick={handleClick} href="#1-18">[18]</a> above),
                 Thomas Gwenhidwy
-                (see <a href="#1-20">1: [20]</a> above), and Roger Mexico. They deduce the firing
+                (see <a onClick={handleClick} href="#1-20">1: [20]</a> above), and Roger Mexico. They deduce the firing
                 <i>direction </i>of the 00000 rocket--true north; but where was it fired
                 <i>from</i>? Roger recalls (another flashback shifting into present
                 tense) Jessica telling him, in Cuxhaven, of her decision to marry Jeremy.
                 Jeremy, at lunch,
                 invites him to dinner, at the home of a former Krupp manager, Stefan
                 Utgarthaloki. Roger brings
-                along Seaman Bodine, who's wearing an extraordinary zoot suit (cf. <a href="#2-6">2: [6]</a>),
+                along Seaman Bodine, who's wearing an extraordinary zoot suit (cf. <a onClick={handleClick} href="#2-6">2: [6]</a>),
                 above?). Arriving,
-                they notice four musicians--including Gustav and Anton (see <a href="#3-12">3: [12]</a>
+                they notice four musicians--including Gustav and Anton (see <a onClick={handleClick} href="#3-12">3: [12]</a>
                 above)--scheduled to play
                 Haydn's suppressed "Kazoo" quartet (711-12). Slothrop, we learn, "has become
                 one plucked
@@ -1899,13 +1907,13 @@ function GR() {
                 alone.
             </p>
                     <p id="4-9">
-                        [9] 717-724. Geli Tripping (see <a href="#3-1">3: [1]</a> and <a href="#3-1">[2]</a> above)
+                        [9] 717-724. Geli Tripping (see <a onClick={handleClick} href="#3-1">3: [1]</a> and <a onClick={handleClick} href="#3-1">[2]</a> above)
                 is looking for Tchitcherine; she's "the
                 only one in the Zone who loves him completely." She is alive to Titans,
                 to "the green uprising,"
                 to the primal energy which we deny, instead promoting death (720). Cut (721)
                 to Gottfried and
-                Blicero (see, for instance, <a href="#1-14">1: [14]</a> above). Blicero tells Gottfried about
+                Blicero (see, for instance, <a onClick={handleClick} href="#1-14">1: [14]</a> above). Blicero tells Gottfried about
                 his search for "the edge
                 of the World," and about earlier "edges," such as America, Africa--gifts,
                 ways of "returning,"
@@ -1918,7 +1926,7 @@ function GR() {
                 he says, "to break out--to leave this cycle of infection and death." (723)
             </p>
                     <p id="4-10">
-                        [10] 724-733. Enzian is transporting the Hereros' rocket (see <a href="#4-5">4: [5]</a>
+                        [10] 724-733. Enzian is transporting the Hereros' rocket (see <a onClick={handleClick} href="#4-5">4: [5]</a>
                 above), the 00001,
                 constructed from scavenged parts. We move into "scholasticism . . . , Rocket
                 state-cosmology."
@@ -1926,7 +1934,7 @@ function GR() {
                 he knows." Katje
                 is with them. And nearby is fat Ludwig; he has found his lemming, Ursula,
                 who peers out of his
-                pocket (729; see <a href="#3-25">3: [25]</a> above). Tensions between Enzian and the Empty
+                pocket (729; see <a onClick={handleClick} href="#3-25">3: [25]</a> above). Tensions between Enzian and the Empty
                 Ones have reemerged,
                 but Enzian maintains control. Ludwig follows on the periphery of the Herero
                 march. "They
@@ -1968,13 +1976,13 @@ function GR() {
                 gives Slothrop a piece of a shirt soaked in the blood of John Dillinger,
                 outside the Biograph
                 Theater (see 368, 516, above; and cf. the cloth with which St. Veronica [see,
-                for instance, <a href="#1-7">1: [7]</a>
+                for instance, <a onClick={handleClick} href="#1-7">1: [7]</a>
                 above] wiped Christ's face?). Later, Bodine began, "helpless, in shame,
                 to let Slothrop go." We
                 learn of Slothrop's last appearance--on the cover of the only album released
                 by an early-'60's rock
                 group, the Fool (742). Dzabajev (earlier, a sidekick of Tchitcherine, see
-                <a href="#3-9">3: [9]</a> above) and his
+                <a onClick={handleClick} href="#3-9">3: [9]</a> above) and his
                 friends are at a convention of village idiots. They are shooting
                 <i>wine</i>--defying gravity with a
                 "wine rush" (743). Which, apparently, sets off the series of titled sub-chapters
@@ -2006,7 +2014,7 @@ function GR() {
                         in the Rocket; "the 00000 is the womb into which Gottfried returns." (750;
                         i.e., we are now
                         learning directly what happened on "the Heath"). The Rocket is the Oven
-                (see <a href="#1-14">1: [14]</a> above).
+                (see <a onClick={handleClick} href="#1-14">1: [14]</a> above).
                 And Gottfried himself is the "Schwarzger&auml;t." "Hardware" (751): Gottfried
                 is encased in
                 Imipolex. There is an earphone for communications from Weissmann, but there
@@ -2021,7 +2029,7 @@ function GR() {
                 (753-54): the
                 rocket countdown was actually first invented for a movie, <i>Die Frau in
                     Mond </i>(1929; cf. Ilse's
-                dreams, <a href="#3-11">3: [11]</a> above?) by Fritz Lang. It is interpreted by "Kabbalist
+                dreams, <a onClick={handleClick} href="#3-11">3: [11]</a> above?) by Fritz Lang. It is interpreted by "Kabbalist
                 spokesman Steve
                 Edelman:" it "appears to be serial, [but] it actually conceals the Tree of
                 Life, which must be

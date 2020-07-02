@@ -13,7 +13,8 @@ export default function Navbar() {
         setActive(!active)
         if (e.target.href) {
             let el = document.getElementById(e.target.href.split('#')[1])
-            window.scrollTo(0, el.offsetTop - 50)
+            if(el) window.scrollTo(0, el.offsetTop - 50)
+            else window.scrollTo(0, 0);
         }
     }
 
@@ -30,10 +31,10 @@ export default function Navbar() {
             <nav className={active ? 'active' : undefined}>
                 <h3>Navigation:</h3>
                 <h4 onClick={handleClick}>
-                    <Link to="/main">Main</Link>
+                    <Link to="/">Main</Link>
                 </h4>
                 <h4 onClick={handleClick}>
-                    <Link to="/">What Happened in GR?</Link>
+                    <Link to="/GR">What Happened in GR?</Link>
                 </h4>
                 <Switch>
                     <Route 
@@ -42,7 +43,7 @@ export default function Navbar() {
                                 handleClick={handleClick}
                             />
                         )} 
-                        path="/" exact
+                        path="/GR" exact
                     />
                 </Switch>
             </nav>
