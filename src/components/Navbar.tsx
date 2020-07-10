@@ -13,7 +13,7 @@ export default function Navbar() {
         setActive(!active)
         if (e.target.href) {
             let el = document.getElementById(e.target.href.split('#')[1])
-            if(el) window.scrollTo(0, el.offsetTop - 50)
+            if (el) window.scrollTo(0, el.offsetTop - 50)
             else window.scrollTo(0, 0);
         }
     }
@@ -21,14 +21,17 @@ export default function Navbar() {
     return (
         <>
             <header>
-                <div className="header__icon">
-                    🚀
-                </div>
-                <div className={"header__burger " + (active && 'active')} onClick={handleClick}>
-                    <span></span>
+                <div className="container">
+                    <div className="header__icon">
+                        🚀
+                    </div>
+                    <div className={"header__burger " + (active && 'active')} onClick={handleClick}>
+                        <span></span>
+                    </div>
                 </div>
             </header>
             <nav className={active ? 'active' : undefined}>
+                <div className="container">
                 <h3>Navigation:</h3>
                 <h4 onClick={handleClick}>
                     <Link to="/">Main</Link>
@@ -37,15 +40,16 @@ export default function Navbar() {
                     <Link to="/GR">What Happened in GR?</Link>
                 </h4>
                 <Switch>
-                    <Route 
+                    <Route
                         component={() => (
                             <ChaptersNavigation
                                 handleClick={handleClick}
                             />
-                        )} 
+                        )}
                         path="/GR" exact
                     />
                 </Switch>
+                </div>
             </nav>
         </>
     )

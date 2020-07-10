@@ -9,7 +9,7 @@ export default function MainBoard() {
         <div className="mainboard">
             <div className="about">
                 <div className="about__title">
-                    <img src="../src/images/543449.jpg" alt="rocket blueprint" />
+                    <img src="../src/img/543449.jpg" alt="rocket blueprint" />
                     <div className="container">
                         <h1>Gravity's Rainbow</h1>
                         <h2>sources</h2>

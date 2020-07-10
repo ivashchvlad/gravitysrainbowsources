@@ -2,12 +2,13 @@ const path = require("path")
 const HtmlWebpackPlugin = require("html-webpack-plugin")
 const { allowedNodeEnvironmentFlags } = require("process")
 const MiniCssExtractPlugin = require("mini-css-extract-plugin")
+const CopyWebpackPlugin = require('copy-webpack-plugin')
 
 module.exports = {
     entry: './src/index.tsx',
     output: {
         filename: `[name].[hash].js`,
-        path: path.join(__dirname, '/build'),
+        path: path.join(__dirname, '/dist'),
         publicPath: '/'
     },
     devtool: "source-map",
@@ -69,21 +70,32 @@ module.exports = {
                         options: { sourceMap: true }
                     }, {
                         loader: 'postcss-loader',
-                        options: { sourceMap: true}
+                        options: { sourceMap: true }
                     }
                 ]
-            }
-        ]
+            },
+            {
+                test: /\.(png|jpg|gif|svg)$/,
+                loader: 'file-loader',
+                options: {
+                    name: '[name].[ext]',
+                }
+            },
+        ],
     },
-    devServer: {
-        historyApiFallback: true,
-    },
+
     plugins: [
         new HtmlWebpackPlugin({
             template: "./src/index.html"
         }),
         new MiniCssExtractPlugin({
             filename: "[name].css"
-        })
+        }),
+        new CopyWebpackPlugin({
+            patterns: [
+                { from: './src/img', to: `img` },
+                { from: './src/static/', to: '' },
+            ]
+        }),
     ],
 }
