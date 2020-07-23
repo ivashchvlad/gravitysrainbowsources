@@ -1,3 +1,5 @@
+@import "./colors.scss";
+
 .videoslider {
     position: relative;
     margin-bottom: 50px;
@@ -44,18 +46,18 @@
     z-index: 10;
     border-radius: 50%;
     background-color: white;
-    border: solid 1px rgb(250, 118, 118);
-    box-shadow: 1px 1px 8px rgb(250, 118, 118);
+    border: solid 1px $light_blue;
+    box-shadow: 1px 1px 8px $dark_blue;
     font-size: 20px;
-    color: rgb(250, 118, 118);
+    color: $dark_blue;
     @media (max-width: 414px) {
         top: 38%
     }
 }
 
 .videoslider button:hover {
-    color: rgb(219, 0, 0);
-    border-color: rgb(219, 0, 0);
+    color: $dark_blue;
+    border-color: $dark_blue;
 }
 
 .button-left {

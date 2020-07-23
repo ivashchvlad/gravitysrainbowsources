@@ -1,10 +1,13 @@
+@import './colors';
+
+
 .card {
     height: 280px;
     width: 200px;
     flex: 30%;
     margin: 10px;
-    border: solid 1px rgb(250, 118, 118);
-    box-shadow: 1px 1px 6px rgb(250, 118, 118);
+    border: solid 1px $light_blue;
+    box-shadow: 1px 1px 6px $light_blue;
     background-color: white;
     transition: ease-in 100ms;
     @media (max-width: 414px) {
@@ -18,8 +21,8 @@
 
 .card:hover {
     transform: scale(1.03);
-    border-color: solid 1px rgb(219, 0, 0);
-    box-shadow: 1px 1px 6px rgb(219, 0, 0);
+    border-color: solid 1px $dark_blue;
+    box-shadow: 1px 1px 6px $dark_blue;
 }
 
 .card__image {
@@ -41,7 +44,7 @@
 .card__content {
     height: 70px;
     margin: 0 5px 0 5px;
-    border-top: solid 1px rgb(250, 118, 118);
+    border-top: solid 1px $light_blue;
     display: flex;
     align-items: center;
     justify-content: center;

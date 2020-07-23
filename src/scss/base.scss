@@ -1,7 +1,16 @@
-$bg-color: rgb(240, 240, 240);
+@import './colors';
 
 body {
-    background: $bg-color;
     width: 100%;
     margin: 0;
+}
+
+a {
+    font-family: 'Oswald', sans-serif;
+    color: $light_blue;
+}
+
+a:hover {
+    color: $dark_blue;
+
 }
