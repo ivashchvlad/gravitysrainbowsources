@@ -7,6 +7,7 @@
     flex: 30%;
     margin: 10px;
     border: solid 1px $light_blue;
+    border-radius: 10px;
     box-shadow: 1px 1px 6px $light_blue;
     background-color: white;
     transition: ease-in 100ms;
@@ -39,6 +40,7 @@
     height: 100%;
     position: absolute;
     object-fit: cover;
+    border-radius: 10px 10px 0 0;
 }
 
 .card__content {

@@ -3,14 +3,19 @@
 body {
     width: 100%;
     margin: 0;
+    transition: ease-in 200ms;
+}
+
+body.dark {
+    background-color: $darkest_blue;
 }
 
 a {
     font-family: 'Oswald', sans-serif;
     color: $light_blue;
+    transition: ease-in 100ms;
 }
 
 a:hover {
     color: $dark_blue;
-
 }

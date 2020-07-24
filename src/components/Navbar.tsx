@@ -6,6 +6,7 @@ import '../scss/navbar.scss'
 
 export default function Navbar() {
     const [active, setActive] = React.useState(false)
+    const [isNightMode, setIsNightMode] = React.useState(false);
 
     const handleClick = (e: any) => {
         e.preventDefault()
@@ -18,12 +19,26 @@ export default function Navbar() {
         }
     }
 
+    const handleNightMode = (e: any) => {
+        setIsNightMode(!isNightMode)
+        document.body.classList.toggle('dark')
+    }
+
     return (
         <>
             <header>
                 <div className="container">
                     <div className="header__icon">
                         🚀
+                    </div>
+                    <div className="nightmode" onClick={handleNightMode}>
+                    <input type="checkbox" className="nightmode__checkbox" id="chk" 
+                        checked={isNightMode}/>
+                    <label className="nightmode__label">
+                        <span>☾</span>
+                        <span>☼</span>     
+                        <div className="nightmode__ball"></div>
+                    </label>
                     </div>
                     <div className={"header__burger " + (active && 'active')} onClick={handleClick}>
                         <span></span>
@@ -32,23 +47,23 @@ export default function Navbar() {
             </header>
             <nav className={active ? 'active' : undefined}>
                 <div className="container">
-                <h3>Navigation:</h3>
-                <h4 onClick={handleClick}>
-                    <Link to="/">Main</Link>
-                </h4>
-                <h4 onClick={handleClick}>
-                    <Link to="/GR">What Happened in GR?</Link>
-                </h4>
-                <Switch>
-                    <Route
-                        component={() => (
-                            <ChaptersNavigation
-                                handleClick={handleClick}
-                            />
-                        )}
-                        path="/GR" exact
-                    />
-                </Switch>
+                    <h3>Navigation:</h3>
+                    <h4 onClick={handleClick}>
+                        <Link to="/">Main</Link>
+                    </h4>
+                    <h4 onClick={handleClick}>
+                        <Link to="/GR">What Happened in GR?</Link>
+                    </h4>
+                    <Switch>
+                        <Route
+                            component={() => (
+                                <ChaptersNavigation
+                                    handleClick={handleClick}
+                                />
+                            )}
+                            path="/GR" exact
+                        />
+                    </Switch>
                 </div>
             </nav>
         </>
