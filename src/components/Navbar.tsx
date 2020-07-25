@@ -35,7 +35,7 @@ export default function Navbar() {
                     <input type="checkbox" className="nightmode__checkbox" id="chk" 
                         checked={isNightMode}/>
                     <label className="nightmode__label">
-                        <span>☾</span>
+                        <span className="nightmode__moon">☾</span>
                         <span>☼</span>     
                         <div className="nightmode__ball"></div>
                     </label>

@@ -1,3 +1,5 @@
+@import './colors';
+
 header {
     position: fixed;
     top: 0;
@@ -11,9 +13,14 @@ header {
     align-items: center;
     padding: 0 100px 0 100px;
     backdrop-filter: blur(5px);
+    transition: ease-in 200ms;
     @media (max-width: 414px) {
         padding: 0px 20px 0 20px;
     }
+}
+
+body.dark header{
+    background-color: $light_blue_transperent;
 }
 
 header .container {
@@ -50,6 +57,10 @@ header .container {
     transition: all 0.4s ease-out 0s;
 }
 
+body.dark .header__burger:before, body.dark .header__burger:after {
+    background-color: white;
+}
+
 .header__burger:before {
     top: 0;
 }
@@ -67,6 +78,10 @@ header .container {
     height: 2px;
     left: 0;
     z-index: 10;
+}
+
+body.dark .header__burger span {
+    background-color: white;
 }
 
 .header__burger.active:before {
@@ -95,6 +110,10 @@ nav {
     transition: all 0.4s ease-out 0s;
     background-color: #ffffffce;
     backdrop-filter: blur(10px);
+}
+
+body.dark nav {
+    background-color: $light_blue_transperent;
 }
 
 nav .container {
@@ -149,6 +168,14 @@ li a {
 	height: 26px;
 	width: 50px;
 	transform: scale(1.5);
+}
+
+body.dark .nightmode__label {
+    background-color: $dark_blue;
+}
+
+.nightmode__moon {
+    color: $light_red;
 }
 
 .nightmode__label .nightmode__ball {

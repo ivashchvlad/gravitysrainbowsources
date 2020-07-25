@@ -1,5 +1,5 @@
 import React from 'react'
-import '../grstyle.css'
+import '../scss/grstyle.scss'
 
 function GR() {
     const handleClick = (e: any) => {

@@ -6,10 +6,6 @@ body {
     transition: ease-in 200ms;
 }
 
-body.dark {
-    background-color: $darkest_blue;
-}
-
 a {
     font-family: 'Oswald', sans-serif;
     color: $light_blue;
@@ -18,4 +14,17 @@ a {
 
 a:hover {
     color: $dark_blue;
+}
+
+//dark theme
+body.dark {
+    background-color: $darkest_blue;
+}
+
+body.dark a {
+    color: white;
+}
+
+body.dark a:hover {
+    color: $light_red;
 }

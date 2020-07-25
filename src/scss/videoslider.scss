@@ -1,4 +1,4 @@
-@import "./colors.scss";
+@import './colors';
 
 .videoslider {
     position: relative;
@@ -46,7 +46,8 @@
     z-index: 10;
     border-radius: 50%;
     background-color: white;
-    border: solid 1px $light_blue;
+    border: solid 1px;
+    border-color: $light_blue;
     box-shadow: 1px 1px 8px $dark_blue;
     font-size: 20px;
     color: $dark_blue;
@@ -60,10 +61,22 @@
     }
 }
 
+body.dark .videoslider button {
+    background-color: $light_blue;
+    border-color: $light_blue;
+    color: white;
+}
+
 .videoslider button:hover {
     background-color: $light_blue;
     color: white;
     transform: scale(1.1);
+}
+
+body.dark  .videoslider button:hover {
+    background-color: $light_red;
+    border-color: $light_red;
+    box-shadow: $light_red;
 }
 
 .button-left {

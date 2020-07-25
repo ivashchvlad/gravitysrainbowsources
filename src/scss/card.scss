@@ -20,6 +20,11 @@
     }
 }
 
+//dark theme
+body.dark .card {
+    background-color: $light_blue;
+}
+
 .card:hover {
     transform: scale(1.03);
     border-color: solid 1px $dark_blue;
