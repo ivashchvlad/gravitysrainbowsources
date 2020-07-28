@@ -29,12 +29,13 @@ export default function Navbar() {
             <header>
                 <div className="container">
                     <div className="header__icon">
-                        🚀
+                    <Link to="/">🚀</Link>
                     </div>
-                    <div className="nightmode" onClick={handleNightMode}>
+                        <div className="header__right">
+                            <div className="nightmode" onClick={handleNightMode}>
                     <input type="checkbox" className="nightmode__checkbox" id="chk" 
                         checked={isNightMode}/>
-                    <label className="nightmode__label">
+                        <label className="nightmode__label">
                         <span className="nightmode__moon">☾</span>
                         <span>☼</span>     
                         <div className="nightmode__ball"></div>
@@ -43,6 +44,8 @@ export default function Navbar() {
                     <div className={"header__burger " + (active && 'active')} onClick={handleClick}>
                         <span></span>
                     </div>
+                        </div>
+                    
                 </div>
             </header>
             <nav className={active ? 'active' : undefined}>

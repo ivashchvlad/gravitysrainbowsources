@@ -16,6 +16,15 @@ a:hover {
     color: $dark_blue;
 }
 
+.container {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1100px;
+    @media (max-width: 414px) {
+        max-width: 414px;
+    }
+}
+
 //dark theme
 body.dark {
     background-color: $darkest_blue;

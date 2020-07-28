@@ -27,14 +27,6 @@
     color: white;
 }
 
-.container {
-    max-width: 1100px;
-    margin: 0 auto;
-    @media (max-width: 414px) {
-        max-width: 414px;
-    }
-}
-
 .about__title h1,
 .about__title h2 {
     z-index: 1;
