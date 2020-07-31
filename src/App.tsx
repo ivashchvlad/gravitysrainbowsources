@@ -7,7 +7,7 @@ import Footer from './components/Footer'
 export default function App() {
     return (
         <>
-            <Router>
+            <Router basename="/gravitysrainbowsources">
                 <Navbar />
                 <MainSwitch />
                 <Footer />

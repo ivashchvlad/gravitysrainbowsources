@@ -1,11 +1,19 @@
 {
   "name": "grsources",
+  "homepage": "https://github.com/ivashchvlad/gravitysrainbowsources/",
   "version": "1.0.0",
   "description": "materials on gravity's rainbow",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --mode development --open --hot",
+<<<<<<< Updated upstream
     "build": "webpack --mode production",
+=======
+    "dev": "webpack-dev-server --open --config webpack.dev.conf.js",
+    "build": "webpack --config webpack.build.conf.js",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
+>>>>>>> Stashed changes
     "test": "test"
   },
   "repository": {
@@ -24,7 +32,6 @@
   "bugs": {
     "url": "https://github.com/ivashchvlad/gravitysrainbowsources/issues"
   },
-  "homepage": "https://github.com/ivashchvlad/gravitysrainbowsources#readme",
   "browserslist": [
     "> 1%",
     "last 3 version"

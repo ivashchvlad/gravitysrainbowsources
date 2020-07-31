@@ -8,9 +8,22 @@ export default function MainBoard() {
         <div className="mainboard">
             <div className="about">
                 <div className="about__title">
+<<<<<<< Updated upstream
                     <img src="../src/images/543449.jpg" alt="rocket blueprint" />
                     <h1>Gravity's Rainbow</h1>
                     <h2>sources</h2>
+=======
+                    <img src="./img/543449.jpg" alt="rocket blueprint" />
+                    <div className="container">
+                        <h1>Gravity's Rainbow</h1>
+                        <h2>sources</h2>
+                        <p><i>
+                            Gravity's rainbow can be extreamly hard to understand.
+                            I struggled myself and found a lot of interesting resources
+                            that helped me out with it. So I thougth about sharing them.
+                        </i></p>
+                    </div>
+>>>>>>> Stashed changes
                 </div>
                 <p>
                     Gravity's rainbow can be extreamly hard to understand.
