@@ -1,6 +1,6 @@
 # gravitysrainbowsources
 GH Pages: https://ivashchvlad.github.io/gravitysrainbowsources/ <br>
-This is page dedicatesd to Thomas Pynchon's novel "Gravitys rainbow".
+This is page dedicatesd to Thomas Pynchon's novel "Gravity's rainbow".
 It's build with TypeScript, React, React Router, SCSS;
 ### `npm run dev`
 
