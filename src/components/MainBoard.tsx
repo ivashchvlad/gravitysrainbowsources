@@ -26,7 +26,7 @@ export default function MainBoard() {
                 <h4>Links</h4>
                 <div className="sources">
                     <Card imageSrc="https://images-na.ssl-images-amazon.com/images/I/A1dmzhFj+iL.jpg">
-                        <Link to="/">
+                        <Link to="/GR">
                             Some things that "happen" (more or less) in gravity's rainbow
                     </Link>
                     </Card>
